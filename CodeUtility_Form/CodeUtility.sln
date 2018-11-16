@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeUtility", "CodeUtility\CodeUtility.csproj", "{81177E7F-21B2-464B-8CB4-1B3B7E6EFA44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81177E7F-21B2-464B-8CB4-1B3B7E6EFA44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81177E7F-21B2-464B-8CB4-1B3B7E6EFA44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81177E7F-21B2-464B-8CB4-1B3B7E6EFA44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81177E7F-21B2-464B-8CB4-1B3B7E6EFA44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDA34740-44E2-4262-B099-DBF85D0232A1}
+	EndGlobalSection
+EndGlobal
