@@ -54,7 +54,6 @@ class Program
             }
 
             Counter.CountLines(trackedDirs, subFolderCheck);
-            Console.ReadKey();
 
         }
         else if(!multiPath)
@@ -62,7 +61,6 @@ class Program
             Console.Write("Enter the path of your master directory here: ");
             dir = Console.ReadLine();
             Counter.CountLines(dir, subFolderCheck);
-            Console.ReadKey();
         }
 
         //string subFolderCheck = Console.ReadLine();
@@ -72,6 +70,8 @@ class Program
 
         //else if (subFolderCheck.ToLower() == "n")
         //    Counter.CountLines(directory, false);
+
+        Console.WriteLine("\nEnter to close app");
 
         Console.ReadKey();
     }

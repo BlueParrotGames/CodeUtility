@@ -9,6 +9,7 @@ namespace BPS.LineCounter
 {
     class Counter
     {
+        public static int absoluteLines; 
         public static void CountLines(string directory, bool TakeInChildDirectories)
         {
             List<FileInfo> csFiles = new List<FileInfo>();
@@ -210,9 +211,16 @@ namespace BPS.LineCounter
             Console.WriteLine("\n Total css lines: " + cssLines + "\n");
 
             Console.WriteLine("------------------------");
-            int absoluteLines = csLines + phpLines + jsLines + htmlLines + cssLines;
+            absoluteLines = csLines + phpLines + jsLines + htmlLines + cssLines;
             Console.WriteLine("\n Absolute Total Lines: " + absoluteLines);
 
+            DBConnection dbConn = new DBConnection();
+            Console.ReadKey();
+
+            dbConn.Initialise();
+            dbConn.Update();
+
+            Console.ReadKey();
         }
 
         struct FileInfo
