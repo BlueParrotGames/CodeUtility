@@ -106,7 +106,7 @@ namespace BPS.LineCounter
             }
         }
 
-        public void Update()
+        public void Update(int value)
         {
             string query = "UPDATE devvalues SET totallines = @totallines";
             //MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -115,7 +115,7 @@ namespace BPS.LineCounter
             {
                 using (MySqlCommand cmd = new MySqlCommand(query, connection))
                 {
-                    cmd.Parameters.Add("@totallines", MySqlDbType.Int32).Value = Counter.absoluteLines;
+                    cmd.Parameters.Add("@totallines", MySqlDbType.Int32).Value = value;
 
                     cmd.ExecuteNonQuery();
                 }
